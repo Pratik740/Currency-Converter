@@ -1,0 +1,131 @@
+/* Global Reset */
+* {
+  padding: 0;
+  margin: 0;
+  font-size: 20px;
+  line-height: 1.5;
+  font-family: 'Poppins', sans-serif; /* Modern font */
+  box-sizing: border-box;
+}
+
+/* Background - Navy Blue Gradient */
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  min-width: 350px;
+  background: linear-gradient(135deg, #0f2027, #203a43, #2c5364); /* Navy Blue Gradient */
+  color: #ffffff;
+  text-align: center;
+  padding: 20px;
+}
+
+/* Form Styling */
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: 800px;
+  min-width: 400px;
+  justify-content: center;
+  gap: 2em;
+  border: 3px solid rgba(255, 255, 255, 0.2); /* Subtle border */
+  border-radius: 20px;
+  padding: 0px 30px;
+  backdrop-filter: blur(10px); /* Glassmorphism effect */
+  background: rgba(255, 255, 255, 0.1); /* Semi-transparent */
+  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.3);
+}
+
+h1 {
+  margin-bottom: 80px;
+  font-size: 40px;
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+}
+
+/* Input Containers */
+.from, .to {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  justify-content: space-between;
+}
+
+/* Dropdown Styling */
+/* Dropdown Container */
+.dropdown {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2em;
+  min-width: 400px;
+  min-height: 150px;
+}
+
+/* Dropdown Select */
+select {
+  width: 220px;
+  padding: 12px;
+  font-size: 18px;
+  font-weight: bold;
+  border: 2px solid rgba(255, 255, 255, 0.4);
+  border-radius: 8px;
+  background: #1b263b; /* Dark navy blue background */
+  color: white; /* White text for contrast */
+  outline: none;
+  cursor: pointer;
+  transition: 0.3s ease-in-out;
+  appearance: none; /* Hide default arrow on some browsers */
+}
+
+/* Ensuring dropdown options are visible */
+select option {
+  background: #1b263b; /* Dark navy */
+  color: white;
+  padding: 10px;
+}
+
+/* Hover & Focus Effects */
+select:hover, select:focus {
+  background: #2a3d5f; /* Slightly lighter navy */
+  border-color: white;
+}
+
+/* Choose Section */
+.choose {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+/* Buttons */
+button {
+  background: #0d1b2a; /* Dark Navy */
+  color: white;
+  border: none;
+  padding: 12px 20px;
+  font-size: 18px;
+  font-weight: bold;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: 0.2s ease-in-out;
+  box-shadow: 0px 3px 6px rgba(0.5, 0.5, 0.5, 0.5);
+}
+
+button:hover {
+  background: #1b263b; /* Lighter Navy */
+  transform: scale(1.10);
+}
+
+/* Final Result */
+#final {
+  font-size: 30px;
+  font-weight: 900;
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+}
